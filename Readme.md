@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [EmployeesAndProducts.cs](./CS/DisplayTwoTables/EmployeesAndProducts.cs) (VB: [EmployeesAndProducts.vb](./VB/DisplayTwoTables/EmployeesAndProducts.vb))
+* [Form1.cs](./CS/DisplayTwoTables/Form1.cs) (VB: [Form1.vb](./VB/DisplayTwoTables/Form1.vb))
+* [Program.cs](./CS/DisplayTwoTables/Program.cs) (VB: [Program.vb](./VB/DisplayTwoTables/Program.vb))
+<!-- default file list end -->
 # How to display the number of data tables in a single report document
 
 
