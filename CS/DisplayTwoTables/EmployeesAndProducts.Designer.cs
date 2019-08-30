@@ -39,6 +39,7 @@ namespace DisplayTwoTables
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             this.employeesTableAdapter = new DisplayTwoTables.DataSet1TableAdapters.EmployeesTableAdapter();
             this.dataSet11 = new DisplayTwoTables.DataSet1();
             this.DetailReport1 = new DevExpress.XtraReports.UI.DetailReportBand();
@@ -48,27 +49,34 @@ namespace DisplayTwoTables
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportHeader1 = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
             this.productsTableAdapter1 = new DisplayTwoTables.DataSet1TableAdapters.ProductsTableAdapter();
             this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
             // 
-            this.Detail.Height = 0;
+            this.Detail.HeightF = 0F;
             this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // PageHeader
             // 
-            this.PageHeader.Height = 30;
+            this.PageHeader.HeightF = 30F;
             this.PageHeader.Name = "PageHeader";
+            this.PageHeader.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.PageHeader.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // PageFooter
             // 
-            this.PageFooter.Height = 30;
+            this.PageFooter.HeightF = 30F;
             this.PageFooter.Name = "PageFooter";
+            this.PageFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.PageFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // DetailReport
             // 
@@ -78,7 +86,10 @@ namespace DisplayTwoTables
             this.DetailReport.DataAdapter = this.employeesTableAdapter;
             this.DetailReport.DataMember = "Employees";
             this.DetailReport.DataSource = this.dataSet11;
+            this.DetailReport.Level = 0;
             this.DetailReport.Name = "DetailReport";
+            this.DetailReport.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.DetailReport.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // Detail1
             // 
@@ -88,64 +99,81 @@ namespace DisplayTwoTables
             this.xrLabel2,
             this.xrPictureBox1,
             this.xrLabel1});
-            this.Detail1.Height = 117;
+            this.Detail1.HeightF = 117F;
             this.Detail1.Name = "Detail1";
+            this.Detail1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLine1
             // 
-            this.xrLine1.Location = new System.Drawing.Point(17, 100);
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(17F, 100F);
             this.xrLine1.Name = "xrLine1";
-            this.xrLine1.Size = new System.Drawing.Size(625, 8);
+            this.xrLine1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.xrLine1.SizeF = new System.Drawing.SizeF(625F, 8F);
             // 
             // xrLabel7
             // 
             this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Employees.Title", "")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Employees.Title")});
             this.xrLabel7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel7.Location = new System.Drawing.Point(17, 0);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(17F, 0F);
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel7.ParentStyleUsing.UseFont = false;
-            this.xrLabel7.Size = new System.Drawing.Size(158, 25);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(158F, 25F);
             this.xrLabel7.Text = "xrLabel7";
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel2
             // 
             this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Employees.City", "")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Employees.City")});
             this.xrLabel2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel2.Location = new System.Drawing.Point(350, 67);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(350F, 67F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.ParentStyleUsing.UseFont = false;
-            this.xrLabel2.Size = new System.Drawing.Size(117, 25);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(117F, 25F);
             this.xrLabel2.Text = "xrLabel2";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrPictureBox1
             // 
             this.xrPictureBox1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Image", null, "Employees.Photo", "")});
-            this.xrPictureBox1.Location = new System.Drawing.Point(508, 0);
+            new DevExpress.XtraReports.UI.XRBinding("Image", null, "Employees.Photo")});
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(508F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.Size = new System.Drawing.Size(108, 92);
+            this.xrPictureBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(108F, 92F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrLabel1
             // 
             this.xrLabel1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel1.Location = new System.Drawing.Point(225, 0);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(225F, 0F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.ParentStyleUsing.UseFont = false;
-            this.xrLabel1.Size = new System.Drawing.Size(242, 25);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(242F, 25F);
             this.xrLabel1.Text = "[LastName], [FirstName]";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel8});
-            this.ReportHeader.Height = 60;
+            this.ReportHeader.HeightF = 60F;
             this.ReportHeader.Name = "ReportHeader";
+            this.ReportHeader.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.ReportHeader.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.BackColor = System.Drawing.Color.Khaki;
+            this.xrLabel8.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(650F, 33F);
+            this.xrLabel8.Text = "Employees";
+            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // employeesTableAdapter
             // 
@@ -166,7 +194,9 @@ namespace DisplayTwoTables
             this.DetailReport1.DataSource = this.dataSet11;
             this.DetailReport1.Level = 1;
             this.DetailReport1.Name = "DetailReport1";
+            this.DetailReport1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.DetailReport1.PageBreak = DevExpress.XtraReports.UI.PageBreak.BeforeBand;
+            this.DetailReport1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // Detail2
             // 
@@ -176,65 +206,80 @@ namespace DisplayTwoTables
             this.xrLabel4,
             this.xrLabel3});
             this.Detail2.EvenStyleName = "xrControlStyle1";
-            this.Detail2.Height = 25;
+            this.Detail2.HeightF = 25F;
             this.Detail2.Name = "Detail2";
+            this.Detail2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail2.SortFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("ProductName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.Detail2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel6
             // 
             this.xrLabel6.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsOnOrder", "")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsOnOrder")});
             this.xrLabel6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel6.Location = new System.Drawing.Point(483, 0);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(483F, 0F);
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel6.ParentStyleUsing.UseFont = false;
-            this.xrLabel6.Size = new System.Drawing.Size(83, 25);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(83F, 25F);
             this.xrLabel6.Text = "xrLabel6";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel5
             // 
             this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsInStock", "")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsInStock")});
             this.xrLabel5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel5.Location = new System.Drawing.Point(575, 0);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(575F, 0F);
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel5.ParentStyleUsing.UseFont = false;
-            this.xrLabel5.Size = new System.Drawing.Size(75, 25);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(75F, 25F);
             this.xrLabel5.Text = "xrLabel5";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel4
             // 
             this.xrLabel4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.QuantityPerUnit", "")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.QuantityPerUnit")});
             this.xrLabel4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel4.Location = new System.Drawing.Point(275, 0);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(275F, 0F);
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.ParentStyleUsing.UseFont = false;
-            this.xrLabel4.Size = new System.Drawing.Size(200, 25);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(200F, 25F);
             this.xrLabel4.Text = "xrLabel4";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel3
             // 
             this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.ProductName", "")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.ProductName")});
             this.xrLabel3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel3.Location = new System.Drawing.Point(0, 0);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.ParentStyleUsing.UseFont = false;
-            this.xrLabel3.Size = new System.Drawing.Size(267, 25);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(267F, 25F);
             this.xrLabel3.Text = "xrLabel3";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // ReportHeader1
             // 
             this.ReportHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel9});
-            this.ReportHeader1.Height = 64;
+            this.ReportHeader1.HeightF = 64F;
             this.ReportHeader1.Name = "ReportHeader1";
+            this.ReportHeader1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.ReportHeader1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLabel9
+            // 
+            this.xrLabel9.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.xrLabel9.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(650F, 33F);
+            this.xrLabel9.Text = "Products";
+            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // productsTableAdapter1
             // 
@@ -243,33 +288,21 @@ namespace DisplayTwoTables
             // xrControlStyle1
             // 
             this.xrControlStyle1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.xrControlStyle1.BorderColor = System.Drawing.Color.Black;
+            this.xrControlStyle1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.xrControlStyle1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrControlStyle1.BorderWidth = 1;
+            this.xrControlStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.xrControlStyle1.ForeColor = System.Drawing.Color.Black;
             this.xrControlStyle1.Name = "xrControlStyle1";
             // 
-            // xrLabel8
+            // topMarginBand1
             // 
-            this.xrLabel8.BackColor = System.Drawing.Color.Khaki;
-            this.xrLabel8.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel8.Location = new System.Drawing.Point(0, 0);
-            this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel8.ParentStyleUsing.UseBackColor = false;
-            this.xrLabel8.ParentStyleUsing.UseFont = false;
-            this.xrLabel8.Size = new System.Drawing.Size(650, 33);
-            this.xrLabel8.Text = "Employees";
-            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.topMarginBand1.Name = "topMarginBand1";
             // 
-            // xrLabel9
+            // bottomMarginBand1
             // 
-            this.xrLabel9.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.xrLabel9.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xrLabel9.Location = new System.Drawing.Point(0, 0);
-            this.xrLabel9.Name = "xrLabel9";
-            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel9.ParentStyleUsing.UseBackColor = false;
-            this.xrLabel9.ParentStyleUsing.UseFont = false;
-            this.xrLabel9.Size = new System.Drawing.Size(650, 33);
-            this.xrLabel9.Text = "Products";
-            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
             // 
             // EmployeesAndProducts
             // 
@@ -278,9 +311,12 @@ namespace DisplayTwoTables
             this.PageHeader,
             this.PageFooter,
             this.DetailReport,
-            this.DetailReport1});
+            this.DetailReport1,
+            this.topMarginBand1,
+            this.bottomMarginBand1});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1});
+            this.Version = "13.1";
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
@@ -312,5 +348,7 @@ namespace DisplayTwoTables
         private DevExpress.XtraReports.UI.XRControlStyle xrControlStyle1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel8;
         private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
     }
 }

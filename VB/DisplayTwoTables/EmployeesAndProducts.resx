@@ -112,93 +112,18 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Detail.Name" xml:space="preserve">
-    <value>Detail</value>
-  </metadata>
-  <metadata name="PageHeader.Name" xml:space="preserve">
-    <value>PageHeader</value>
-  </metadata>
-  <metadata name="PageFooter.Name" xml:space="preserve">
-    <value>PageFooter</value>
-  </metadata>
-  <metadata name="DetailReport.Name" xml:space="preserve">
-    <value>DetailReport</value>
-  </metadata>
-  <metadata name="Detail1.Name" xml:space="preserve">
-    <value>Detail1</value>
-  </metadata>
-  <metadata name="xrLine1.Name" xml:space="preserve">
-    <value>xrLine1</value>
-  </metadata>
-  <metadata name="xrLabel7.Name" xml:space="preserve">
-    <value>xrLabel7</value>
-  </metadata>
-  <metadata name="xrLabel2.Name" xml:space="preserve">
-    <value>xrLabel2</value>
-  </metadata>
-  <metadata name="xrPictureBox1.Name" xml:space="preserve">
-    <value>xrPictureBox1</value>
-  </metadata>
-  <metadata name="xrLabel1.Name" xml:space="preserve">
-    <value>xrLabel1</value>
-  </metadata>
-  <metadata name="ReportHeader.Name" xml:space="preserve">
-    <value>ReportHeader</value>
-  </metadata>
-  <metadata name="xrLabel8.Name" xml:space="preserve">
-    <value>xrLabel8</value>
-  </metadata>
-  <metadata name="employeesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="employeesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>123, 17</value>
   </metadata>
-  <metadata name="employeesTableAdapter.Name" xml:space="preserve">
-    <value>employeesTableAdapter</value>
-  </metadata>
-  <metadata name="dataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="dataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="dataSet11.Name" xml:space="preserve">
-    <value>dataSet11</value>
-  </metadata>
-  <metadata name="DetailReport1.Name" xml:space="preserve">
-    <value>DetailReport1</value>
-  </metadata>
-  <metadata name="Detail2.Name" xml:space="preserve">
-    <value>Detail2</value>
-  </metadata>
-  <metadata name="xrLabel6.Name" xml:space="preserve">
-    <value>xrLabel6</value>
-  </metadata>
-  <metadata name="xrLabel5.Name" xml:space="preserve">
-    <value>xrLabel5</value>
-  </metadata>
-  <metadata name="xrLabel4.Name" xml:space="preserve">
-    <value>xrLabel4</value>
-  </metadata>
-  <metadata name="xrLabel3.Name" xml:space="preserve">
-    <value>xrLabel3</value>
-  </metadata>
-  <metadata name="ReportHeader1.Name" xml:space="preserve">
-    <value>ReportHeader1</value>
-  </metadata>
-  <metadata name="xrLabel9.Name" xml:space="preserve">
-    <value>xrLabel9</value>
-  </metadata>
-  <metadata name="productsTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="productsTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>306, 17</value>
-  </metadata>
-  <metadata name="productsTableAdapter1.Name" xml:space="preserve">
-    <value>productsTableAdapter1</value>
-  </metadata>
-  <metadata name="xrControlStyle1.Name" xml:space="preserve">
-    <value>xrControlStyle1</value>
-  </metadata>
-  <metadata name="$this.Name" xml:space="preserve">
-    <value>EmployeesAndProducts</value>
   </metadata>
 </root>
