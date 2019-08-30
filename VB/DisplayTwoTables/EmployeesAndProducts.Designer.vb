@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace DisplayTwoTables
+﻿Namespace DisplayTwoTables
 	Partial Public Class EmployeesAndProducts
 		''' <summary>
 		''' Required designer variable.
