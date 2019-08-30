@@ -113,8 +113,8 @@ namespace DisplayTwoTables
             // 
             // xrLabel7
             // 
-            this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Employees.Title")});
+            this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Title]")});
             this.xrLabel7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(17F, 0F);
             this.xrLabel7.Name = "xrLabel7";
@@ -125,8 +125,8 @@ namespace DisplayTwoTables
             // 
             // xrLabel2
             // 
-            this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Employees.City")});
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[City]")});
             this.xrLabel2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(350F, 67F);
             this.xrLabel2.Name = "xrLabel2";
@@ -137,8 +137,8 @@ namespace DisplayTwoTables
             // 
             // xrPictureBox1
             // 
-            this.xrPictureBox1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Image", null, "Employees.Photo")});
+            this.xrPictureBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Image", "[Photo]")});
             this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(508F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
@@ -215,8 +215,8 @@ namespace DisplayTwoTables
             // 
             // xrLabel6
             // 
-            this.xrLabel6.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsOnOrder")});
+            this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsOnOrder]")});
             this.xrLabel6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(483F, 0F);
             this.xrLabel6.Name = "xrLabel6";
@@ -227,8 +227,8 @@ namespace DisplayTwoTables
             // 
             // xrLabel5
             // 
-            this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsInStock")});
+            this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsInStock]")});
             this.xrLabel5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(575F, 0F);
             this.xrLabel5.Name = "xrLabel5";
@@ -239,8 +239,8 @@ namespace DisplayTwoTables
             // 
             // xrLabel4
             // 
-            this.xrLabel4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.QuantityPerUnit")});
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[QuantityPerUnit]")});
             this.xrLabel4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(275F, 0F);
             this.xrLabel4.Name = "xrLabel4";
@@ -251,8 +251,8 @@ namespace DisplayTwoTables
             // 
             // xrLabel3
             // 
-            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.ProductName")});
+            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]")});
             this.xrLabel3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel3.Name = "xrLabel3";
@@ -291,17 +291,19 @@ namespace DisplayTwoTables
             this.xrControlStyle1.BorderColor = System.Drawing.Color.Black;
             this.xrControlStyle1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrControlStyle1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrControlStyle1.BorderWidth = 1;
+            this.xrControlStyle1.BorderWidth = 1F;
             this.xrControlStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrControlStyle1.ForeColor = System.Drawing.Color.Black;
             this.xrControlStyle1.Name = "xrControlStyle1";
             // 
             // topMarginBand1
             // 
+            this.topMarginBand1.HeightF = 100F;
             this.topMarginBand1.Name = "topMarginBand1";
             // 
             // bottomMarginBand1
             // 
+            this.bottomMarginBand1.HeightF = 100F;
             this.bottomMarginBand1.Name = "bottomMarginBand1";
             // 
             // EmployeesAndProducts
@@ -316,7 +318,7 @@ namespace DisplayTwoTables
             this.bottomMarginBand1});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1});
-            this.Version = "13.1";
+            this.Version = "17.2";
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
