@@ -101,7 +101,7 @@
 			' 
 			' xrLabel7
 			' 
-			Me.xrLabel7.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Employees.Title")})
+			Me.xrLabel7.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Title]")})
 			Me.xrLabel7.Font = New System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(204)))
 			Me.xrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(17F, 0F)
 			Me.xrLabel7.Name = "xrLabel7"
@@ -112,7 +112,7 @@
 			' 
 			' xrLabel2
 			' 
-			Me.xrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Employees.City")})
+			Me.xrLabel2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[City]")})
 			Me.xrLabel2.Font = New System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, (CByte(204)))
 			Me.xrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(350F, 67F)
 			Me.xrLabel2.Name = "xrLabel2"
@@ -123,7 +123,7 @@
 			' 
 			' xrPictureBox1
 			' 
-			Me.xrPictureBox1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Image", Nothing, "Employees.Photo")})
+			Me.xrPictureBox1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Image", "[Photo]")})
 			Me.xrPictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(508F, 0F)
 			Me.xrPictureBox1.Name = "xrPictureBox1"
 			Me.xrPictureBox1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -192,7 +192,7 @@
 			' 
 			' xrLabel6
 			' 
-			Me.xrLabel6.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Products.UnitsOnOrder")})
+			Me.xrLabel6.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsOnOrder]")})
 			Me.xrLabel6.Font = New System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(204)))
 			Me.xrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(483F, 0F)
 			Me.xrLabel6.Name = "xrLabel6"
@@ -203,7 +203,7 @@
 			' 
 			' xrLabel5
 			' 
-			Me.xrLabel5.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Products.UnitsInStock")})
+			Me.xrLabel5.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsInStock]")})
 			Me.xrLabel5.Font = New System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(204)))
 			Me.xrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(575F, 0F)
 			Me.xrLabel5.Name = "xrLabel5"
@@ -214,7 +214,7 @@
 			' 
 			' xrLabel4
 			' 
-			Me.xrLabel4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Products.QuantityPerUnit")})
+			Me.xrLabel4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[QuantityPerUnit]")})
 			Me.xrLabel4.Font = New System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(204)))
 			Me.xrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(275F, 0F)
 			Me.xrLabel4.Name = "xrLabel4"
@@ -225,7 +225,7 @@
 			' 
 			' xrLabel3
 			' 
-			Me.xrLabel3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Products.ProductName")})
+			Me.xrLabel3.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]")})
 			Me.xrLabel3.Font = New System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(204)))
 			Me.xrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
 			Me.xrLabel3.Name = "xrLabel3"
@@ -263,24 +263,26 @@
 			Me.xrControlStyle1.BorderColor = System.Drawing.Color.Black
 			Me.xrControlStyle1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid
 			Me.xrControlStyle1.Borders = DevExpress.XtraPrinting.BorderSide.None
-			Me.xrControlStyle1.BorderWidth = 1
+			Me.xrControlStyle1.BorderWidth = 1F
 			Me.xrControlStyle1.Font = New System.Drawing.Font("Times New Roman", 9.75F)
 			Me.xrControlStyle1.ForeColor = System.Drawing.Color.Black
 			Me.xrControlStyle1.Name = "xrControlStyle1"
 			' 
 			' topMarginBand1
 			' 
+			Me.topMarginBand1.HeightF = 100F
 			Me.topMarginBand1.Name = "topMarginBand1"
 			' 
 			' bottomMarginBand1
 			' 
+			Me.bottomMarginBand1.HeightF = 100F
 			Me.bottomMarginBand1.Name = "bottomMarginBand1"
 			' 
 			' EmployeesAndProducts
 			' 
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.PageHeader, Me.PageFooter, Me.DetailReport, Me.DetailReport1, Me.topMarginBand1, Me.bottomMarginBand1})
 			Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.xrControlStyle1})
-			Me.Version = "13.1"
+			Me.Version = "17.2"
 			CType(Me.dataSet11, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
